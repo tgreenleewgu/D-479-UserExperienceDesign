@@ -1,0 +1,70 @@
+
+
+
+.color {
+    background-color: aqua;
+    color: black;
+}
+
+.header{
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.body-main {
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    flex-direction: column; 
+    background-color: aqua;
+    
+}
+
+.wrapper {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap: 20px;
+    background-color: aqua;
+   
+    
+    
+}
+
+.body-main img {
+    max-width: 100%; 
+    height: auto; 
+}
+
+.elements {
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    text-align: center;
+    height: 200px;
+    
+}
+
+.elements img {
+    max-width: 100%;
+    max-height: 100%; 
+}
+
+
+
+@media (max-width: 768px) {
+    
+    .wrapper {
+        grid-template-columns: repeat(2, 1fr); 
+    }
+}
+
+@media (max-width: 576px) {
+    
+    .wrapper {
+        grid-template-columns: repeat(1, 1fr); 
+    }
+}
+
